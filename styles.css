@@ -1,0 +1,274 @@
+body{        /* Gör att hela sidan har backgrundsbilden jag vill ha, att den inte fortsätter och att den passar hela sidan. Bottom, top, left och right gör så att det inte finns något mellanrum mellan sidan och skärmens kant. */
+    background-image: url(images/tobias.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-attachment: fixed;
+}
+
+#sida{ /* Sido diven. Sätter bredden till 17% av sidan och gör att den håller sig åt vänster. Margin och Padding gör att alla kanter är tillräckligt långt ifrån allt innuti och utanför. Postion fixed gör att den alltid håller sig exakt där på sidan även om man skrollar. */
+    float: left;
+    width: 17%;
+    background-color: #345061;
+    height: fit-content;
+    margin-left: 1%;
+    margin-top: 0.5%;
+    border-radius: 25px; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+    position: fixed;
+}
+
+#profil{ /* Div för profilbilden. Bestämmer storlek och gör kanterna rundade. Margin gör att den centreras.     § */
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20%;
+}
+
+.sidatext{ /* Stylar texten på sidrutan. Texten i knapparna. */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    color: #345061;
+    padding-top: 4%;
+}
+
+a:link, a:visited{  /* Gör att texten i knapparna förblir blå efter att man tryckt på den. */
+    color: #345061;
+    text-decoration: none;
+}
+
+button{ /* Stylar knappen. Sätter färg, bredd, padding och margin och en skugga på. Cursor gör att man ser på muset att man kan trycka på knappen nör man hovrar över den. */
+    font-size: xx-large;
+    background-color: aliceblue;
+    border: none;
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+    border-radius: 6%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-shadow: 1px 3px 3px black;
+    cursor: pointer;
+}
+
+.ikoner{     /* Sätter storleken på ikonerna. */
+    font-size: 80px;
+}
+#twitter-ikon, #linkedin-ikon{  /* Gör att twitter och linkedin ikonerna börjar med lite mellanrum från vänster */
+    margin-left: 10%;
+}
+#mail-ikon, #instagram-ikon{    /* Får mail och instagram ikonerna att börja från höger men med lite mellanrum från högra kanten. */
+    float:right;
+    margin-right: 10%;
+}
+
+.langa{     /* Diven där allt egentligen sitter. Bredden på den är inte hela sidan och den är blurrad så att man ska kunna se texten bättre. */
+    float: right;
+    width: 72%;
+    margin-right: 5%;
+    backdrop-filter: blur(5px);
+}
+
+#namn{  /* Stylar namnet. Texten är centerad. */
+    text-align: center;
+    color: aliceblue;
+    font-size: 5em;
+}
+
+.mittenbox{     /* Gör att lådan är centrerad och sätter storleken på den. */
+    background-color: #345061;
+    margin-top: 10%;
+    height: 90%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}       /* Gör att texten är centrerad samt att kanterna på tabellerna faller in på varandra så att det inte blir något mellanrum mellan kanterna. */
+.mittentabell{
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td{     /* Stylar texten i tabellen. Placerar den där den ska vara med hjälp av padding. */
+    color: aliceblue;
+    border: 4px aliceblue solid;
+    font-size: 30px;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    border-radius: 80px;
+}
+
+.rubrik, #ommigtext{        /* Gör text vit och får den att börja lite från vänster */
+    color: aliceblue;
+    margin-left: 5%;
+}
+#ommigtext{     /* Sätter storleken på texten och bredden på diven med texten i */
+    font-size: 25px;
+    width: 50%;
+}
+.rubik{     /* Sätter storleken på diven och att den inte ska ha något mellanrum till höger */
+    width: 50%;
+    margin-right: 0px;
+}
+#ommig, #utbildning, #erfarenheter{ /* Stylar texten */
+    font-size: 4em;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.sportikoner{       /* Bestämmer att det ska vara lite mellanrum mellan de olika ikonerna till vänster och under, samt att de sak börja från vänster */
+    padding-left: 3%;
+    float: left;
+    padding-bottom: 1px;
+}
+
+li span{        /* Sätter storleken på texten i spannet */
+    font-size: 25px;
+
+}
+#streck{        /* Bestämmer hur stor och exakt var strecket ska sitta på sidan */
+    width: 10px;
+    height: 240px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    position: absolute;
+    left: 287px;
+    margin-top: 40px;
+}
+
+.medprick{      /* Stylar texten i listan som har en prick */
+    font-size: 70px;
+    margin-left: 70%;
+    color: aliceblue;
+}
+
+.ingenprick{    /* Bestämmer att den klassen inte ska ha någon prick genom att ta bort stylen, vilket innehåller pricken. */
+    list-style: none;
+    color: aliceblue;
+    font-size: 70px;
+}
+
+#container{     /* Bestämmer att diven som följande cirklar ska vara i ska ha display flex, vilket gör att saker kommer att hamna på rad. */
+    display: flex;
+    width: 42%;
+    float: none;
+}
+
+.flex-child{    /* Gör att texten börjar från höger och att det inte är något mellanrum någonstans*/
+    margin: 0;
+    text-align: right;
+}
+
+.cirkel{  /* Bestämmer storleken på diven och att den ska vara rund, samt gör den till en felxbox och bestämmer att allt i den kommer att vara centrerat både horizontelt och vertikalt. */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cirkelett{     /* Bestämmer att cirkeln ska börja med vit i "x grader" och sedan fortsätta resten av vägen med blått. */
+    background: conic-gradient(aliceblue 270deg, #345061 0deg);
+}
+#cirkeltvå{
+    background: conic-gradient(aliceblue 340deg, #345061 0deg);
+}
+#cirkeltre{
+    background: conic-gradient(aliceblue 230deg, #345061 0deg);
+}
+#cirkelfyra{
+    background: conic-gradient(aliceblue 300deg, #345061 0deg);
+}
+.procenttext{
+    text-align: center;
+    background-color: #345061;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size:xx-large;
+}
+#containercirklar{
+    display: flex;
+    margin-left: 5%;
+    padding-top: 10%;
+}
+
+.cirkeltext{
+    color: aliceblue;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 2em;
+    padding-left: 2%;
+}
+#webdesign{
+    margin-right: 20%;
+}
+#generellprogrammering{
+    margin-right: 4%;
+} 
+
+.störrelista{
+    font-size: 70px;
+    margin-left: 5%;
+    color: aliceblue;
+}
+.störrelistarubrik{
+    font-size: 45px;
+    background-color: #345061;
+    box-shadow: 1px 3px 3px black;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 20px;
+
+}
+.störrelistatext{
+    font-size: 30px;
+    margin-top: 0;
+    display: none;
+    height: fit-content;
+}
+.störrelistarubrik:hover + .störrelistatext{
+    display: block;
+}
+
+.jobbrubrik{
+    color: aliceblue;
+    font-size: 3em;
+    padding-left: 5%;
+    margin: none;
+    width: fit-content;
+}
+
+.jobbtext{
+    height: fit-content;
+    color: aliceblue;
+    padding-left: 5%;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+}
+
+#uppsalakommun, #kulturvidekoln{
+    width: 200px;
+    display: inline-block;
+}
+
+#startlogga{
+    background: url(images/nylogga.gif) no-repeat center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+}

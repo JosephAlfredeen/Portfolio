@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>      <!-- Bakgrunden för hemsidan, innehåller allt -->
+
+
+
+    <div id="sida">     <!-- Sidebar, innehåller bilden på "mig", länkar till sidan och länkar till mina medier -->
+    
+    <div id="profil">
+        <img id="profil" src="images/profilbild.jpg" alt="profilbild">      <!-- Profilbilden -->
+    </div>
+
+    <p class="sidatext">
+        <button onClick="document.getElementById('ommig').scrollIntoView();">       <!-- Knapp för att komma till "Om mig" sidan av hemsidan -->
+            <a href="#ommig">Om Mig</a>     <!-- Länk så att texten även fungerar som länk till "Om mig" -->
+        </button>
+    </p>
+    <p class="sidatext">
+        <button onClick="document.getElementById('utbildning').scrollIntoView();">      <!-- Samma som tidigare knapp men till annan del av sidan -->
+            <a href="#utbildning">Utbildning</a>
+        </button>
+       
+    </p>    <p class="sidatext">
+        <button onClick="document.getElementById('erfarenheter').scrollIntoView();">    <!-- Samma som tidigare knapp men till annna del av sidan -->
+            <a href="#erfarenheter">Erfarenheter</a>
+        </button>
+    </p>
+
+    <a class="ikoner" id="twitter-ikon" href="https://twitter.com/JosephAlfredeen"><i class="fa fa-twitter" style="color:aliceblue"></i></i>       <!-- Lägger in icon för twitter och länkar till min twitter -->
+    <a class="ikoner" id="mail-ikon" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNwfZxVknJnXfFRXtJbvGCTQNJcWjZGXMWmJDKQzFbDxCsjWHfFsqpRHfbbvcKXLpGCZVV"><i class="fa fa-envelope" style="color:aliceblue"></i></a>      <!-- Lägger in ikon för mail och länkar till min mail -->
+    <a class="ikoner" id="linkedin-ikon" href="https://www.linkedin.com/in/joseph-alfred%C3%A9en-080bb0250/"><i class="fa fa-linkedin" style="color:aliceblue"></i></a>     <!-- Lägger in icon för linked in och länkar till min linked in -->
+    <a class="ikoner" id="instagram-ikon" href="https://www.instagram.com/josephalfredeen/?next=%2F"><i class="fa fa-instagram" style="color:aliceblue"></i></a>     
+
+    </div>
+
+<div class="langa">     <!-- Div som innehåller allt som syns i mitten av sidan -->
+
+    <h1 id="namn"> Joseph Alfredéen </h1>       <!-- Rubrik för mitt namn -->
+
+    <div class="mittenbox" >        <!-- Kvadraten med de fyra hörnen med statistik -->
+        <table class="mittentabell">        <!-- Jag använde en tabell för att få två rutor bredvid varandra och två under varadnra så att jag slipper göra fyra divar och positionera dem -->
+            <tr>
+                <td>
+                    15
+                    <br>
+                    Years of Technical Education
+                </td>
+                <td>
+                    15+
+                    <br>
+                    Years of Technical Work Experiance
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    6
+                    <br>
+                    Professional Websites Programmed 
+                </td>
+                <td>
+                    160+
+                    <br>
+                    Satisfied Costumers
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <br>        <!-- många br för att få mellanrum med det under -->
+        <br>
+            <br>
+                <br>
+                    <br>
+                        <br>
+                            <br>
+                                <br>
+                                    <br>
+                                        <br>
+   
+
+        <p id="ommig" class="rubrik">Om Mig</p>     <!-- Rubrik för "om mig" delen av sidan -->
+        <p  id="ommigtext">     <!-- Div för att kunna styla om mig texten -->
+        Mitt namn är Joseph Alfredeen. Hela mitt liv har jag strävat för att förbättra mig själv och utveckla mina kunskaper. Mitt största intresse är programmering, jag anser att det är väldigt intressant och att det är viktigt att arbeta med eftersom att framtiden ligger inom det området.
+        <br>
+        Jag föddes i en liten stad i Sverige med min syster och mina älskade föräldrar. De har stöttat mig genom allt det svåra i livet. Mitt mål är att göra världen till en bättre plats med hjälp av mina programmerings kunskaper.
+        <br>
+        Jag är en väldigt sympatisk och snäll människa och jag hjälper till med det jag kan. Jag spenderar ofta mina helger på soppköket för hemlösa för att bidra med mitt till samhället. Jag donerar största delen av mina pengar till välgörenhet.
+        </p>
+
+        
+
+    <br>
+
+    <h1 class="rubrik">Fritidsintressen</h1>        <!-- Rubrik för mina fritidsintressen -->
+        
+        <p class="sportikoner"> <i class="fa fa-bicycle" style="font-size:100px; color:aliceblue"> </i> </p>     <!-- Iconer för intressena -->
+        <p class="sportikoner"> <i class="fa fa-gamepad" style="font-size:100px; color:aliceblue"> </i> </p>
+        <p class="sportikoner"> <i class="fa fa-music" style="font-size:100px; color:aliceblue"> </i> </p>
+    
+        <br>
+            <br>
+                <br>
+                    <br>
+                        <br>
+                            <br>
+                                <br>
+                                    <br>
+                                        <br>
+                                            <br>
+                                                <br>
+                           
+    <div id="container">        <!-- En div för att hålla de följande divarna i rad -->
+        <ul class="flex-child">     <!-- En lista med kort info om mig -->
+            <li class="ingenprick"> <span>Hollandsresan 288</span>  </li>
+            <li class="ingenprick"> <span>076-064 2349</span>      </li>
+            <li class="ingenprick"> <span>17 år</span>              </li>
+            <li class="ingenprick"> <span>Man</span>                </li>
+        </ul>
+        
+        <ul class="flex-child">     <!-- Lista med bullets -->
+            <div id="streck"></div>
+            <li class="medprick"> <span>Adress</span>  </li>
+            <li class="medprick"> <span>Ålder<span>    </li>
+            <li class="medprick"> <span>Nummer</span> </li>
+            <li class="medprick"> <span>Kön</span>     </li>
+        </ul>
+    </div>
+
+
+    <br>
+        <br>
+            <br>
+                <br>
+                    <br>
+                        <br>
+                            <br>
+                                <br>
+                                    <br>
+                                        <br>
+
+
+
+    <p id="utbildning" class="rubrik">Utbildning</p>
+
+    <div id="containercirklar">     <!-- En div som innehåller de kommande divarna -->
+        <div class="cirkel" id="cirkelett">     <!-- Cirkulär div -->
+            <div class="procenttext">75%</div>      <!-- Cirkulär div med annan färg så att det ser ut som att den förra diven har en border, har även procent text innuti. -->
+        </div>
+        <div class="cirkeltext" id="webdesign">     <!-- Linje med text bredvid som beskriver vad procentcirkeln är för -->
+            <p>Webdesign</p>
+        </div>
+        <div class="cirkel" id="cirkeltvå">
+            <div class="procenttext">94%</div>
+        </div>
+        <div class="cirkeltext">
+            <p>Språk Kunnighet</p>
+        </div>
+    </div>
+    <div id="containercirklar">     <!-- En till div som innåller de tåv följande divarna. Har detta två gånger så att de är tåv på en rad -->
+        <div class="cirkel" id="cirkeltre">
+            <div class="procenttext">64%</div>
+        </div>
+        <div class="cirkeltext" id="generellprogrammering">
+            <p>Generell Programmering</p>
+        </div>
+        <div class="cirkel" id="cirkelfyra">
+            <div class="procenttext">82%</div>
+        </div>
+        <div class="cirkeltext">
+            <p>Spel Design</p>
+        </div>
+    </div>
+    
+    <ul class="störrelista">        <!-- En lista så att de följande hamnar på rad med lika stort mellanrum -->
+        <li >
+            <span class="störrelistarubrik"> Orrparkens Förskola </span>        <!-- Rubrik som går att hovra över för att få fram texten under. -->
+            <p class="störrelistatext"> Jag gick på Orrparkens Förskola ett år från åldrarna 4 till 5. Där fick jag lära mig Svenska, leka och andra färdigheter. Jag var en strålande elev som var omtyckt bland lärarna. På föräldra-samtal talade lärarna ofta om min villighet att lära mig nya saker och mitt intresse för hur världen fungerade, samt hur trevlig och inkluderande jag var mot de andra eleverna. </p>        <!--  Div med texten under-->
+        </li>
+        <li>
+            <span class="störrelistarubrik">Stordammens Skola</span>
+            <p class="störrelistatext"> Från förskolan till årskurs 3 gick jag på Stordammens Grundskola i Sävja. Jag fick grunderna till hela min skolgång där. Allt från Svenska och Engelska till Matematik och samhällsämnen började jag lära mig på Stordammens skola. </p>
+        </li>
+        <li>
+            <span class="störrelistarubrik">Internationella Engelska Skolan Uppsala (IESU)</span>
+            <p class="störrelistatext"> Jag gick på Engelska skolan mellan årskurserna fyra till nio. Min mamma jobbade här och min syster gick redan i skolan, därför fick jag förtur in. På Engelska skolan utvecklades mina förmågor ytterligare. Jag blev snabbt ett fan av de logiska och naturvetenskapliga ämnena. Speciellt matematik, programering och teknik. </p>
+        </li>
+        <li>
+            <span class="störrelistarubrik">Nordens Tekniker Institut (NTI) Uppsala</span>
+            <p class="störrelistatext"> Sedan 2021 har jag gått på NTI gymnasiet i Uppsala där jag utvecklat mina kunskaper inom teknik, programering och matematik. </p>
+        </li>
+    </ul>
+
+    <br>
+        <br>
+            <br>
+                <br>
+                    <br>
+                        <br>
+                            <br>
+                                <br>
+                                    <br>
+                                        <br>
+
+
+    <p id="erfarenheter" class="rubrik">Tidigare Erfarenheter</p>       <!-- Rubrik för erfarenheterna -->
+
+    <div class="jobbrubrik"> Uppsala Kommun, Trädgårdsmästare <img id="uppsalakommun" src="images/uppsalalogga.svg" alt="uppsala kommuns logga"></div>      <!-- Rubrik, sedan en bild bredvid till höger på uppsala kommuns logga -->
+    <div class="jobbtext"> Jag har sommarjobbat för Uppsala kommun år 2020 som trädgårdsmästare. Där fick jag arbetsuppgifter så som att plocka skräp, ogräs och måla om bänkar. Jag lärde mig även att sammarbeta med mina kollegor samt att utveckla mitt tålamod.    <!-- Div med text -->
+    </div>
+    <div class="jobbrubrik"> Kultur vid Ekoln, Kock och Servitör <img id="kulturvidekoln" src="images/kulturvidekoln.jfif" alt="kultur vid ekolns logga"></div>
+    <div class="jobbtext"> Under år 2022 har jag säsongsarbetat på Kafeet Kultur vid Ekoln. Där hade jag arbetsuppgifter som serbitör, kock, städare samt att ställa fram alla bord och stolar. Jag hade även hand om pengar och andra värdesaker. Här har jag lärt mig att ta hand om kunder och att bemöta folk på rätt sätt.
+    </div>
+
+    
+
+</div>
+
+
+</body>
+</html>
